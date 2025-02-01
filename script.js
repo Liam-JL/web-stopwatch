@@ -40,6 +40,11 @@ class Model {
         this.intervalId = setInterval(this.countdown.bind(this), 1000);
     }
 
+    stopCountdown() {
+        clearInterval(this.intervalId);
+        console.log(`Paused and time remaining is ${this.timeRemaining}`)
+    }
+
     countdown() {
         this.timeRemaining -= 1;   
         console.log(this.timeRemaining) ;
@@ -93,7 +98,9 @@ class Controller {
         
         if (this.model.isPlaying) {
             this.model.startCountdown();
-        } 
+        } else {
+            this.model.stopCountdown();
+        }
     }
 
 }
