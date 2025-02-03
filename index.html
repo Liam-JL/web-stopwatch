@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <title>Stopwatch</title>
 </head>
-<body>
-    <div class="display-container">
-        <span id="timerDisplay" class="timer-display">00:00:00:00</span>
-    </div>
-    <div class="buttons-container">
-        <button id="startBtn">Start</button>
-        <button id="stopBtn">Stop</button>
-        <button id="resetBtn">Reset</button>
+<body class="bg-dark vh-100 d-flex flex-column justify-content-center align-items-center">
+    <div class="card p-5 bg-secondary bg-opacity-50 ">
+        <h1 class="mb-4 text-center text-white">⏱ Stopwatch</h1>
+        <div class="display-container">
+            <h2 id="timerDisplay" class="display-3 fw-bold text-center text-white">00:00:00:00</h2>
+        </div>
+        <div class="buttons-container mt-4 text-center">
+            <button id="startBtn" class="btn btn-success">Start</button>
+            <button id="stopBtn" class="btn btn-danger">Stop</button>
+            <button id="resetBtn" class="btn btn-light">Reset</button>
+        </div>
     </div>
 </body>
 </html> 

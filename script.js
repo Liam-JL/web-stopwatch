@@ -1,4 +1,3 @@
-//Model
 class Model {
     constructor() {
         this.listeners = [];
@@ -49,7 +48,6 @@ class Model {
     }
 }
 
-//View
 class View {
     constructor() {
         this.timerDisplay = document.getElementById("timerDisplay")
@@ -89,7 +87,6 @@ class View {
     }
 }
 
-//Controller
 class Controller {
     constructor(model, view) {
         this.model = model;
